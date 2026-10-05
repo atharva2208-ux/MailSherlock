@@ -1,0 +1,682 @@
+{
+  "model_version": "1.0.0",
+  "threshold": 0.55439,
+  "test": {
+    "samples": 1035,
+    "phishing": 448,
+    "legitimate": 587,
+    "threshold": 0.5544,
+    "precision": 0.9954,
+    "recall": 0.9598,
+    "f1": 0.9773,
+    "accuracy": 0.9807,
+    "false_positive_rate": 0.0034,
+    "false_negative_rate": 0.0402,
+    "roc_auc": 0.9996,
+    "pr_auc": 0.9995,
+    "confusion_matrix": {
+      "tp": 430,
+      "fp": 2,
+      "tn": 585,
+      "fn": 18
+    },
+    "at_threshold_0_5": {
+      "samples": 1035,
+      "phishing": 448,
+      "legitimate": 587,
+      "threshold": 0.5,
+      "precision": 0.9932,
+      "recall": 0.971,
+      "f1": 0.982,
+      "accuracy": 0.9845,
+      "false_positive_rate": 0.0051,
+      "false_negative_rate": 0.029,
+      "roc_auc": 0.9996,
+      "pr_auc": 0.9995,
+      "confusion_matrix": {
+        "tp": 435,
+        "fp": 3,
+        "tn": 584,
+        "fn": 13
+      }
+    }
+  },
+  "test_errors": [
+    {
+      "id": "f44cd7b388e30ea2",
+      "label": "phishing",
+      "score": 0.2127
+    },
+    {
+      "id": "ba6e38ed2751f754",
+      "label": "phishing",
+      "score": 0.3067
+    },
+    {
+      "id": "7277b30f19106d21",
+      "label": "phishing",
+      "score": 0.3401
+    },
+    {
+      "id": "c583bfd370e90602",
+      "label": "phishing",
+      "score": 0.3415
+    },
+    {
+      "id": "60eba6ee9d594f73",
+      "label": "legitimate",
+      "score": 0.7456
+    },
+    {
+      "id": "64f34b77469ed24f",
+      "label": "phishing",
+      "score": 0.381
+    },
+    {
+      "id": "7583a92f41924878",
+      "label": "phishing",
+      "score": 0.3816
+    },
+    {
+      "id": "a48f2bba2ffbcb1d",
+      "label": "phishing",
+      "score": 0.4038
+    },
+    {
+      "id": "f836b13d2f8c136e",
+      "label": "phishing",
+      "score": 0.4439
+    },
+    {
+      "id": "e45d801097c0f604",
+      "label": "phishing",
+      "score": 0.4451
+    },
+    {
+      "id": "cfe42dfd37c3f0a8",
+      "label": "phishing",
+      "score": 0.4527
+    },
+    {
+      "id": "f3f24dd1c3ce15f9",
+      "label": "phishing",
+      "score": 0.4564
+    },
+    {
+      "id": "34cce6c79a353332",
+      "label": "legitimate",
+      "score": 0.6445
+    },
+    {
+      "id": "1eabe9213e4c966b",
+      "label": "phishing",
+      "score": 0.4823
+    },
+    {
+      "id": "8e19e99591bac690",
+      "label": "phishing",
+      "score": 0.4826
+    },
+    {
+      "id": "492e805eba72ec0a",
+      "label": "phishing",
+      "score": 0.5031
+    },
+    {
+      "id": "17cf94f1b497af05",
+      "label": "phishing",
+      "score": 0.5327
+    },
+    {
+      "id": "bc26b4cc669e51ab",
+      "label": "phishing",
+      "score": 0.5426
+    },
+    {
+      "id": "9d165b7c0d7c7c42",
+      "label": "phishing",
+      "score": 0.546
+    },
+    {
+      "id": "fdcbd3f531fecfac",
+      "label": "phishing",
+      "score": 0.5476
+    }
+  ],
+  "challenge": {
+    "samples": 34,
+    "phishing": 12,
+    "legitimate": 22,
+    "threshold": 0.5544,
+    "precision": 0.3571,
+    "recall": 0.8333,
+    "f1": 0.5,
+    "accuracy": 0.4118,
+    "false_positive_rate": 0.8182,
+    "false_negative_rate": 0.1667,
+    "roc_auc": 0.6174,
+    "pr_auc": 0.435,
+    "confusion_matrix": {
+      "tp": 10,
+      "fp": 18,
+      "tn": 4,
+      "fn": 2
+    },
+    "predictions": [
+      {
+        "id": "c00",
+        "subject": "Reset your password",
+        "label": "legitimate",
+        "probability": 0.97,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c01",
+        "subject": "Your verification code",
+        "label": "legitimate",
+        "probability": 0.9516,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c02",
+        "subject": "Security alert: new sign-in to your account",
+        "label": "legitimate",
+        "probability": 0.986,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c03",
+        "subject": "Your Amazon.in order has shipped",
+        "label": "legitimate",
+        "probability": 0.8453,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c04",
+        "subject": "Invoice INV-0042 from Acme Design Studio",
+        "label": "legitimate",
+        "probability": 0.7374,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c05",
+        "subject": "Payment received - thank you",
+        "label": "legitimate",
+        "probability": 0.9954,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c06",
+        "subject": "Your monthly statement is ready",
+        "label": "legitimate",
+        "probability": 0.9708,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c07",
+        "subject": "Weekly digest: 14 new posts in Rust Users",
+        "label": "legitimate",
+        "probability": 0.3025,
+        "predicted": "legitimate"
+      },
+      {
+        "id": "c08",
+        "subject": "Your subscription will renew soon",
+        "label": "legitimate",
+        "probability": 0.8381,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c09",
+        "subject": "Action required: confirm your email address",
+        "label": "legitimate",
+        "probability": 0.9972,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c10",
+        "subject": "Interview schedule - Security Analyst Intern",
+        "label": "legitimate",
+        "probability": 0.7104,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c11",
+        "subject": "Re: lab report submission",
+        "label": "legitimate",
+        "probability": 0.4928,
+        "predicted": "legitimate"
+      },
+      {
+        "id": "c12",
+        "subject": "Flash sale: 40% off everything this weekend",
+        "label": "legitimate",
+        "probability": 0.1731,
+        "predicted": "legitimate"
+      },
+      {
+        "id": "c13",
+        "subject": "Your Uber receipt",
+        "label": "legitimate",
+        "probability": 0.9194,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c14",
+        "subject": "GitHub: [repo] Dependabot alert",
+        "label": "legitimate",
+        "probability": 0.5999,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c15",
+        "subject": "Your account has been locked after failed sign-ins",
+        "label": "legitimate",
+        "probability": 0.9721,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c16",
+        "subject": "Reminder: dentist appointment tomorrow",
+        "label": "legitimate",
+        "probability": 0.8991,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c17",
+        "subject": "Team offsite - travel details",
+        "label": "legitimate",
+        "probability": 0.6849,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c18",
+        "subject": "Your PayPal receipt",
+        "label": "legitimate",
+        "probability": 0.9927,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c19",
+        "subject": "Two-factor authentication enabled",
+        "label": "legitimate",
+        "probability": 0.9084,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c20",
+        "subject": "Delivery update: your parcel is out for delivery",
+        "label": "legitimate",
+        "probability": 0.8298,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c21",
+        "subject": "Overdue library book",
+        "label": "legitimate",
+        "probability": 0.2818,
+        "predicted": "legitimate"
+      },
+      {
+        "id": "c22",
+        "subject": "Your mailbox is almost full",
+        "label": "phishing",
+        "probability": 0.9616,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c23",
+        "subject": "Payment declined - update your billing information",
+        "label": "phishing",
+        "probability": 0.9924,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c24",
+        "subject": "Unusual activity detected",
+        "label": "phishing",
+        "probability": 0.9778,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c25",
+        "subject": "Re: outstanding invoice",
+        "label": "phishing",
+        "probability": 0.9685,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c26",
+        "subject": "Shared document: Q3 Salary Revision.pdf",
+        "label": "phishing",
+        "probability": 0.9524,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c27",
+        "subject": "Congratulations! You have won",
+        "label": "phishing",
+        "probability": 0.9794,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c28",
+        "subject": "Urgent request",
+        "label": "phishing",
+        "probability": 0.7066,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c29",
+        "subject": "IT: mandatory MFA re-enrollment",
+        "label": "phishing",
+        "probability": 0.4337,
+        "predicted": "legitimate"
+      },
+      {
+        "id": "c30",
+        "subject": "Your package is on hold",
+        "label": "phishing",
+        "probability": 0.54,
+        "predicted": "legitimate"
+      },
+      {
+        "id": "c31",
+        "subject": "Tax refund notification",
+        "label": "phishing",
+        "probability": 0.9745,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c32",
+        "subject": "Apple ID locked",
+        "label": "phishing",
+        "probability": 0.972,
+        "predicted": "phishing"
+      },
+      {
+        "id": "c33",
+        "subject": "Job offer - work from home",
+        "label": "phishing",
+        "probability": 0.9583,
+        "predicted": "phishing"
+      }
+    ]
+  },
+  "feature_weights": {
+    "phishing": [
+      {
+        "kind": "word",
+        "feature": "your",
+        "weight": 4.7693
+      },
+      {
+        "kind": "word",
+        "feature": "de",
+        "weight": 3.0255
+      },
+      {
+        "kind": "word",
+        "feature": "you",
+        "weight": 2.7319
+      },
+      {
+        "kind": "char",
+        "feature": "you",
+        "weight": 2.702
+      },
+      {
+        "kind": "char",
+        "feature": " yo",
+        "weight": 2.6989
+      },
+      {
+        "kind": "char",
+        "feature": " you",
+        "weight": 2.6943
+      },
+      {
+        "kind": "char",
+        "feature": "your",
+        "weight": 2.5999
+      },
+      {
+        "kind": "char",
+        "feature": " your",
+        "weight": 2.5839
+      },
+      {
+        "kind": "char",
+        "feature": "our ",
+        "weight": 2.5126
+      },
+      {
+        "kind": "char",
+        "feature": "ur ",
+        "weight": 2.4999
+      },
+      {
+        "kind": "char",
+        "feature": "your ",
+        "weight": 2.4921
+      },
+      {
+        "kind": "char",
+        "feature": "our",
+        "weight": 2.3457
+      },
+      {
+        "kind": "word",
+        "feature": "unsubscribe",
+        "weight": 2.2261
+      },
+      {
+        "kind": "char",
+        "feature": " 0 ",
+        "weight": 2.0811
+      },
+      {
+        "kind": "word",
+        "feature": "this email",
+        "weight": 1.719
+      },
+      {
+        "kind": "word",
+        "feature": "our",
+        "weight": 1.6242
+      },
+      {
+        "kind": "word",
+        "feature": "para",
+        "weight": 1.6014
+      },
+      {
+        "kind": "word",
+        "feature": "account",
+        "weight": 1.5246
+      },
+      {
+        "kind": "word",
+        "feature": "we",
+        "weight": 1.5128
+      },
+      {
+        "kind": "word",
+        "feature": "email",
+        "weight": 1.4668
+      },
+      {
+        "kind": "word",
+        "feature": "claim",
+        "weight": 1.4415
+      },
+      {
+        "kind": "word",
+        "feature": "please",
+        "weight": 1.4339
+      },
+      {
+        "kind": "word",
+        "feature": "view",
+        "weight": 1.4147
+      },
+      {
+        "kind": "word",
+        "feature": "here",
+        "weight": 1.3947
+      },
+      {
+        "kind": "word",
+        "feature": "wallet",
+        "weight": 1.3713
+      }
+    ],
+    "legitimate": [
+      {
+        "kind": "word",
+        "feature": "the",
+        "weight": -3.0558
+      },
+      {
+        "kind": "word",
+        "feature": "it",
+        "weight": -2.03
+      },
+      {
+        "kind": "word",
+        "feature": "of",
+        "weight": -1.8457
+      },
+      {
+        "kind": "word",
+        "feature": "that",
+        "weight": -1.7862
+      },
+      {
+        "kind": "char",
+        "feature": "the",
+        "weight": -1.6997
+      },
+      {
+        "kind": "word",
+        "feature": "on",
+        "weight": -1.6925
+      },
+      {
+        "kind": "char",
+        "feature": "'s ",
+        "weight": -1.5476
+      },
+      {
+        "kind": "char",
+        "feature": " the",
+        "weight": -1.5232
+      },
+      {
+        "kind": "word",
+        "feature": "urltoken",
+        "weight": -1.5212
+      },
+      {
+        "kind": "char",
+        "feature": " th",
+        "weight": -1.4815
+      },
+      {
+        "kind": "word",
+        "feature": "so",
+        "weight": -1.3992
+      },
+      {
+        "kind": "word",
+        "feature": "but",
+        "weight": -1.3929
+      },
+      {
+        "kind": "char",
+        "feature": "...",
+        "weight": -1.3656
+      },
+      {
+        "kind": "word",
+        "feature": "linux",
+        "weight": -1.3564
+      },
+      {
+        "kind": "word",
+        "feature": "in the",
+        "weight": -1.3227
+      },
+      {
+        "kind": "char",
+        "feature": "the ",
+        "weight": -1.3217
+      },
+      {
+        "kind": "word",
+        "feature": "they",
+        "weight": -1.3188
+      },
+      {
+        "kind": "word",
+        "feature": "some",
+        "weight": -1.3178
+      },
+      {
+        "kind": "char",
+        "feature": ":* ",
+        "weight": -1.2747
+      },
+      {
+        "kind": "char",
+        "feature": " the ",
+        "weight": -1.2746
+      },
+      {
+        "kind": "char",
+        "feature": "====",
+        "weight": -1.2194
+      },
+      {
+        "kind": "char",
+        "feature": "=====",
+        "weight": -1.2149
+      },
+      {
+        "kind": "char",
+        "feature": "he ",
+        "weight": -1.2082
+      },
+      {
+        "kind": "word",
+        "feature": "spam",
+        "weight": -1.1886
+      },
+      {
+        "kind": "char",
+        "feature": "===",
+        "weight": -1.1579
+      }
+    ]
+  },
+  "validation": {
+    "samples": 1078,
+    "phishing": 507,
+    "legitimate": 571,
+    "threshold": 0.5544,
+    "precision": 0.994,
+    "recall": 0.9744,
+    "f1": 0.9841,
+    "accuracy": 0.9852,
+    "false_positive_rate": 0.0053,
+    "false_negative_rate": 0.0256,
+    "roc_auc": 0.9973,
+    "pr_auc": 0.9976,
+    "confusion_matrix": {
+      "tp": 494,
+      "fp": 3,
+      "tn": 568,
+      "fn": 13
+    }
+  }
+}

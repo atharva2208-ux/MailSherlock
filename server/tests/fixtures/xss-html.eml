@@ -1,0 +1,15 @@
+From: "Notifier" <notify@example.net>
+To: analyst@example.org
+Subject: Rendering test
+Date: Mon, 05 Oct 2026 10:00:00 +0000
+Message-ID: <xss-1@example.net>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html><head><script>alert('head')</script></head><body onload="steal()">
+<p>Hello <img src="https://tracker.example.net/p.gif" onerror="alert(1)"></p>
+<a href="javascript:alert(document.cookie)">Click</a>
+<iframe src="https://evil.example.net/frame"></iframe>
+<svg><script>alert(2)</script></svg>
+<p style="color:red;background:url(javascript:alert(3))">styled</p>
+</body></html>

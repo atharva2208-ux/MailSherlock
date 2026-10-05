@@ -1,0 +1,46 @@
+Return-Path: <billing@fastmail.example.com>
+Received: from mx-in.example.org (mx-in.example.org [192.0.2.25])
+	by inbox.example.org with LMTP; Thu, 01 Oct 2026 02:10:44 +0000
+Received: from smtp.fastmail.example.com (smtp.fastmail.example.com [192.0.2.61])
+	by mx-in.example.org with ESMTPS; Thu, 01 Oct 2026 02:10:43 +0000
+Authentication-Results: mx-in.example.org;
+	spf=pass smtp.mailfrom=fastmail.example.com;
+	dkim=pass header.d=fastmail.example.com;
+	dmarc=pass header.from=fastmail.example.com
+From: "Fastmail Billing" <billing@fastmail.example.com>
+To: analyst@example.org
+Subject: Your receipt for October 2026
+Date: Thu, 01 Oct 2026 02:10:40 +0000
+Message-ID: <receipt-2026-10-77@fastmail.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="alt_rc"
+
+--alt_rc
+Content-Type: text/plain; charset=UTF-8
+
+Thanks for your payment.
+
+Receipt #R-2026-10-0077
+Plan: Standard (monthly)
+Amount charged: $5.00 to the Visa card on file
+Billing period: 1 Oct 2026 - 31 Oct 2026
+
+You can view and download all receipts from your billing page:
+https://app.fastmail.example.com/settings/billing
+
+Questions? Reply to this email or visit https://help.fastmail.example.com
+
+--alt_rc
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+<p>Thanks for your payment.</p>
+<table>
+<tr><td>Receipt</td><td>#R-2026-10-0077</td></tr>
+<tr><td>Plan</td><td>Standard (monthly)</td></tr>
+<tr><td>Amount charged</td><td>$5.00 to the Visa card on file</td></tr>
+</table>
+<p>View all receipts on your <a href="https://app.fastmail.example.com/settings/billing">billing page</a>.</p>
+</body></html>
+
+--alt_rc--

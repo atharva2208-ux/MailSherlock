@@ -1,0 +1,25 @@
+Return-Path: <service@paypal-resolution-center.xyz>
+Received: from mx-in.example.org (mx-in.example.org [192.0.2.25])
+	by inbox.example.org with LMTP; Tue, 22 Sep 2026 17:40:12 +0000
+Received: from [198.51.100.140] (helo=vps-3321.hosting.example)
+	by mx-in.example.org with esmtp; Tue, 22 Sep 2026 17:40:10 +0000
+Authentication-Results: mx-in.example.org;
+	spf=softfail smtp.mailfrom=paypal-resolution-center.xyz;
+	dkim=fail (signature verification failed) header.d=paypal-resolution-center.xyz;
+	dmarc=fail header.from=paypal.com
+From: "PayPal Service" <service@paypal.com>
+To: analyst@example.org
+Subject: Your PayPal account has been limited
+Date: Tue, 22 Sep 2026 17:39:55 +0000
+Message-ID: <a81c-22f9@vps-3321.hosting.example>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+<p>Dear Customer,</p>
+<p>We noticed some unusual activity on your PayPal account. As a security precaution, your account access has been limited.</p>
+<p>To restore full access, please confirm your billing information and card details within 48 hours. Failure to do so will result in permanent account closure.</p>
+<p><a href="http://bit.ly/3pAyPa1-restore">Restore My Account</a></p>
+<p>Alternatively, visit <a href="https://www.paypal.com@198.51.100.140/webapps/restore/signin.php">https://www.paypal.com/restore</a></p>
+<p>Sincerely,<br>PayPal Resolution Center</p>
+</body></html>

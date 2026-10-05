@@ -1,0 +1,64 @@
+Return-Path: <bounce-7731@mailer.secure-notify-center.top>
+Received: from mx-in.example.org (mx-in.example.org [192.0.2.25])
+	by inbox.example.org with LMTP id 4kQe; Mon, 14 Sep 2026 09:14:07 +0000
+Received: from relay.secure-notify-center.top (unknown [203.0.113.77])
+	by mx-in.example.org (Postfix) with ESMTP id 9A1F23C0042
+	for <analyst@example.org>; Mon, 14 Sep 2026 09:14:05 +0000 (UTC)
+Received: from localhost (unknown [10.12.4.9])
+	by relay.secure-notify-center.top with SMTP; Mon, 14 Sep 2026 09:13:58 +0000
+Authentication-Results: mx-in.example.org;
+	spf=fail (domain of mailer.secure-notify-center.top does not designate 203.0.113.77 as permitted sender) smtp.mailfrom=mailer.secure-notify-center.top;
+	dkim=none (message not signed);
+	dmarc=fail (p=reject dis=none) header.from=micr0soft-accountprotection.com
+From: "Microsoft Account Team" <no-reply@micr0soft-accountprotection.com>
+Reply-To: "Account Recovery" <recovery.desk.2291@gmail-support-mail.com>
+To: analyst@example.org
+Subject: =?UTF-8?B?QWN0aW9uIFJlcXVpcmVkOiBVbnVzdWFsIHNpZ24taW4gYWN0aXZpdHk=?=
+Date: Mon, 14 Sep 2026 09:13:51 +0000
+Message-ID: <20260914091351.88231@relay.secure-notify-center.top>
+MIME-Version: 1.0
+X-Mailer: PHPMailer 6.1.4
+Content-Type: multipart/alternative; boundary="b1_ms_77d1"
+
+--b1_ms_77d1
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Microsoft account
+
+Unusual sign-in activity
+
+We detected something unusual about a recent sign-in to your Microsoft acco=
+unt. Your account will be suspended within 24 hours unless you verify your =
+credentials immediately.
+
+Verify your account: https://login.micr0soft-accountprotection.com/owa/verif=
+y?session=3D8f2a91&email=3Danalyst@example.org
+
+If you do not confirm your identity, all access to your mailbox and OneDrive=
+ files will be permanently disabled.
+
+Thanks,
+The Microsoft account team
+
+--b1_ms_77d1
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body style=3D"font-family:Segoe UI,Arial">
+<h2>Microsoft account</h2>
+<p><b>Unusual sign-in activity</b></p>
+<p>We detected something unusual about a recent sign-in to your Microsoft accou=
+nt. Your account will be suspended within 24 hours unless you verify your cre=
+dentials immediately.</p>
+<p><a href=3D"https://login.micr0soft-accountprotection.com/owa/verify?session=
+=3D8f2a91&amp;email=3Danalyst@example.org">https://account.microsoft.com/secur=
+ity</a></p>
+<p>If you do not confirm your identity, all access to your mailbox and OneDriv=
+e files will be permanently disabled.</p>
+<div style=3D"display:none">microsoft security notification account safe</div>
+<p>Thanks,<br>The Microsoft account team</p>
+<img src=3D"http://203.0.113.77/t.gif?id=3D8f2a91" width=3D"1" height=3D"1">
+</body></html>
+
+--b1_ms_77d1--

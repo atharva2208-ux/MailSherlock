@@ -1,0 +1,53 @@
+Return-Path: <bounce-weekly@news.example-devblog.com>
+Received: from mx-in.example.org (mx-in.example.org [192.0.2.25])
+	by inbox.example.org with LMTP; Sun, 04 Oct 2026 07:00:22 +0000
+Received: from o1.news.example-devblog.com (o1.news.example-devblog.com [192.0.2.140])
+	by mx-in.example.org with ESMTPS; Sun, 04 Oct 2026 07:00:21 +0000
+Authentication-Results: mx-in.example.org;
+	spf=pass smtp.mailfrom=news.example-devblog.com;
+	dkim=pass header.d=example-devblog.com;
+	dmarc=pass header.from=example-devblog.com
+From: "The DevBlog Weekly" <weekly@example-devblog.com>
+To: analyst@example.org
+Subject: This week: Rust async internals, Postgres 18 tips, and a CSS deep dive
+Date: Sun, 04 Oct 2026 07:00:15 +0000
+Message-ID: <weekly-41@example-devblog.com>
+List-Unsubscribe: <https://example-devblog.com/unsubscribe?u=77a1>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="nl_41"
+
+--nl_41
+Content-Type: text/plain; charset=UTF-8
+
+The DevBlog Weekly - Issue #41
+
+1. How async executors schedule tasks in Rust
+   https://example-devblog.com/posts/rust-async-executors
+
+2. Ten Postgres 18 features worth upgrading for
+   https://example-devblog.com/posts/postgres-18-features
+
+3. Container queries in practice
+   https://example-devblog.com/posts/container-queries
+
+Limited time: annual subscribers get 20% off this week only.
+https://example-devblog.com/subscribe
+
+You are receiving this because you subscribed at example-devblog.com.
+Unsubscribe: https://example-devblog.com/unsubscribe?u=77a1
+
+--nl_41
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+<h1>The DevBlog Weekly - Issue #41</h1>
+<ol>
+<li><a href="https://example-devblog.com/posts/rust-async-executors">How async executors schedule tasks in Rust</a></li>
+<li><a href="https://example-devblog.com/posts/postgres-18-features">Ten Postgres 18 features worth upgrading for</a></li>
+<li><a href="https://example-devblog.com/posts/container-queries">Container queries in practice</a></li>
+</ol>
+<p>Limited time: annual subscribers get 20% off this week only. <a href="https://example-devblog.com/subscribe">Subscribe</a></p>
+<p><small>You are receiving this because you subscribed. <a href="https://example-devblog.com/unsubscribe?u=77a1">Unsubscribe</a></small></p>
+</body></html>
+
+--nl_41--

@@ -1,0 +1,48 @@
+{
+  "name": "mailsherlock",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Email phishing detection and investigation platform. They Bait, We Investigate.",
+  "license": "MIT",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web,ml -c cyan,magenta,yellow \"npm:dev -w server\" \"npm:dev -w client\" \"npm:ml:serve\"",
+    "dev:noml": "concurrently -n api,web -c cyan,magenta \"npm:dev -w server\" \"npm:dev -w client\"",
+    "build": "npm run build -w server && npm run build -w client",
+    "start": "npm run start -w server",
+    "test": "npm run test -w server && npm run test -w client",
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w client",
+    "ml:serve": "python3 -m ml.inference.service",
+    "ml:test": "python3 -m pytest ml/tests -q",
+    "ml:fetch": "bash scripts/fetch-datasets.sh",
+    "ml:preprocess": "python3 -m ml.preprocessing.preprocess",
+    "ml:train": "python3 -m ml.training.train",
+    "ml:evaluate": "python3 -m ml.evaluation.evaluate",
+    "ml:predict": "python3 -m ml.inference.predict"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "concurrently": "^10.0.5",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "typescript": "~6.0.0",
+    "typescript-eslint": "^8.71.0"
+  },
+  "type": "module",
+  "allowScripts": {
+    "better-sqlite3@13.0.3": true,
+    "esbuild@0.28.2": true
+  }
+}

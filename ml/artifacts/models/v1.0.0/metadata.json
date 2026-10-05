@@ -1,0 +1,344 @@
+{
+  "model_name": "MailSherlock Phishing Classifier",
+  "model_version": "1.0.0",
+  "dataset_version": "2026.10-pp-sa",
+  "feature_version": "f1",
+  "candidate": "lr_text",
+  "description": "TF-IDF words + character 3-5 grams + logistic regression",
+  "training_date": "2026-10-05T05:08:53+00:00",
+  "training_samples": 5000,
+  "training_phishing": 2239,
+  "training_legitimate": 2761,
+  "validation_samples": 1078,
+  "threshold": 0.55439,
+  "threshold_policy": "lowest validation threshold with false-positive rate <= 1%",
+  "seed": 1337,
+  "dataset_sources": [
+    {
+      "name": "phishing_pot",
+      "label": "phishing",
+      "url": "https://github.com/rf-peixoto/phishing_pot",
+      "license": "CC BY-NC 4.0",
+      "description": "Real phishing and scam emails collected from honeypot inboxes (2022-present), recipient addresses anonymised by the maintainers."
+    },
+    {
+      "name": "spamassassin_ham",
+      "label": "legitimate",
+      "url": "https://github.com/stdlib-js/datasets-spam-assassin (SpamAssassin public corpus)",
+      "license": "Apache-2.0 (corpus distributed by the Apache SpamAssassin project)",
+      "description": "easy_ham, easy_ham_2 and hard_ham folders: personal, mailing-list, newsletter and commercial mail that is not spam."
+    }
+  ],
+  "environment": {
+    "python": "3.13.16",
+    "scikit_learn": "1.9.1"
+  },
+  "selection": {
+    "criterion": "highest validation recall at FPR <= 1% (then PR-AUC) among eligible candidates: linear, exactly decomposable, and no structural weight contradicting security priors",
+    "candidates": [
+      {
+        "candidate": "lr_words",
+        "description": "TF-IDF word 1-2 grams + logistic regression",
+        "explainable": true,
+        "prior_violations": [],
+        "eligible": true,
+        "recall_at_target_fpr": 0.9744,
+        "validation": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.4916,
+          "precision": 0.992,
+          "recall": 0.9744,
+          "f1": 0.9831,
+          "accuracy": 0.9842,
+          "false_positive_rate": 0.007,
+          "false_negative_rate": 0.0256,
+          "roc_auc": 0.9952,
+          "pr_auc": 0.9961,
+          "confusion_matrix": {
+            "tp": 494,
+            "fp": 4,
+            "tn": 567,
+            "fn": 13
+          }
+        },
+        "validation_at_0_5": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.5,
+          "precision": 0.9919,
+          "recall": 0.9704,
+          "f1": 0.981,
+          "accuracy": 0.9824,
+          "false_positive_rate": 0.007,
+          "false_negative_rate": 0.0296,
+          "roc_auc": 0.9952,
+          "pr_auc": 0.9961,
+          "confusion_matrix": {
+            "tp": 492,
+            "fp": 4,
+            "tn": 567,
+            "fn": 15
+          }
+        },
+        "train_seconds": 3.52
+      },
+      {
+        "candidate": "lr_text",
+        "description": "TF-IDF words + character 3-5 grams + logistic regression",
+        "explainable": true,
+        "prior_violations": [],
+        "eligible": true,
+        "recall_at_target_fpr": 0.9744,
+        "validation": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.5544,
+          "precision": 0.994,
+          "recall": 0.9744,
+          "f1": 0.9841,
+          "accuracy": 0.9852,
+          "false_positive_rate": 0.0053,
+          "false_negative_rate": 0.0256,
+          "roc_auc": 0.9973,
+          "pr_auc": 0.9976,
+          "confusion_matrix": {
+            "tp": 494,
+            "fp": 3,
+            "tn": 568,
+            "fn": 13
+          }
+        },
+        "validation_at_0_5": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.5,
+          "precision": 0.9861,
+          "recall": 0.9763,
+          "f1": 0.9812,
+          "accuracy": 0.9824,
+          "false_positive_rate": 0.0123,
+          "false_negative_rate": 0.0237,
+          "roc_auc": 0.9973,
+          "pr_auc": 0.9976,
+          "confusion_matrix": {
+            "tp": 495,
+            "fp": 7,
+            "tn": 564,
+            "fn": 12
+          }
+        },
+        "train_seconds": 14.26
+      },
+      {
+        "candidate": "lr_hybrid",
+        "description": "TF-IDF words + character 3-5 grams + structural features + logistic regression",
+        "explainable": true,
+        "prior_violations": [
+          {
+            "feature": "max_subdomain_depth",
+            "weight": -0.9393
+          },
+          {
+            "feature": "form_present",
+            "weight": -1.0013
+          }
+        ],
+        "eligible": false,
+        "recall_at_target_fpr": 0.9763,
+        "validation": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.5783,
+          "precision": 0.99,
+          "recall": 0.9744,
+          "f1": 0.9821,
+          "accuracy": 0.9833,
+          "false_positive_rate": 0.0088,
+          "false_negative_rate": 0.0256,
+          "roc_auc": 0.9966,
+          "pr_auc": 0.9961,
+          "confusion_matrix": {
+            "tp": 494,
+            "fp": 5,
+            "tn": 566,
+            "fn": 13
+          }
+        },
+        "validation_at_0_5": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.5,
+          "precision": 0.9861,
+          "recall": 0.9763,
+          "f1": 0.9812,
+          "accuracy": 0.9824,
+          "false_positive_rate": 0.0123,
+          "false_negative_rate": 0.0237,
+          "roc_auc": 0.9966,
+          "pr_auc": 0.9961,
+          "confusion_matrix": {
+            "tp": 495,
+            "fp": 7,
+            "tn": 564,
+            "fn": 12
+          }
+        },
+        "train_seconds": 18.01
+      },
+      {
+        "candidate": "svm_hybrid",
+        "description": "Same features + linear SVM with sigmoid calibration",
+        "explainable": false,
+        "prior_violations": [],
+        "eligible": false,
+        "recall_at_target_fpr": 0.9763,
+        "validation": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.5725,
+          "precision": 0.992,
+          "recall": 0.9744,
+          "f1": 0.9831,
+          "accuracy": 0.9842,
+          "false_positive_rate": 0.007,
+          "false_negative_rate": 0.0256,
+          "roc_auc": 0.9971,
+          "pr_auc": 0.996,
+          "confusion_matrix": {
+            "tp": 494,
+            "fp": 4,
+            "tn": 567,
+            "fn": 13
+          }
+        },
+        "validation_at_0_5": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.5,
+          "precision": 0.988,
+          "recall": 0.9783,
+          "f1": 0.9831,
+          "accuracy": 0.9842,
+          "false_positive_rate": 0.0105,
+          "false_negative_rate": 0.0217,
+          "roc_auc": 0.9971,
+          "pr_auc": 0.996,
+          "confusion_matrix": {
+            "tp": 496,
+            "fp": 6,
+            "tn": 565,
+            "fn": 11
+          }
+        },
+        "train_seconds": 19.31
+      },
+      {
+        "candidate": "nb_words",
+        "description": "TF-IDF word 1-2 grams + complement naive Bayes",
+        "explainable": false,
+        "prior_violations": [],
+        "eligible": false,
+        "recall_at_target_fpr": 0.9724,
+        "validation": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.2612,
+          "precision": 0.9919,
+          "recall": 0.9704,
+          "f1": 0.981,
+          "accuracy": 0.9824,
+          "false_positive_rate": 0.007,
+          "false_negative_rate": 0.0296,
+          "roc_auc": 0.9904,
+          "pr_auc": 0.9935,
+          "confusion_matrix": {
+            "tp": 492,
+            "fp": 4,
+            "tn": 567,
+            "fn": 15
+          }
+        },
+        "validation_at_0_5": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.5,
+          "precision": 0.9979,
+          "recall": 0.9586,
+          "f1": 0.9779,
+          "accuracy": 0.9796,
+          "false_positive_rate": 0.0018,
+          "false_negative_rate": 0.0414,
+          "roc_auc": 0.9904,
+          "pr_auc": 0.9935,
+          "confusion_matrix": {
+            "tp": 486,
+            "fp": 1,
+            "tn": 570,
+            "fn": 21
+          }
+        },
+        "train_seconds": 3.59
+      },
+      {
+        "candidate": "gbm_structural",
+        "description": "Structural features only + histogram gradient boosting",
+        "explainable": false,
+        "prior_violations": [],
+        "eligible": false,
+        "recall_at_target_fpr": 0.8146,
+        "validation": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.9096,
+          "precision": 0.988,
+          "recall": 0.8126,
+          "f1": 0.8918,
+          "accuracy": 0.9072,
+          "false_positive_rate": 0.0088,
+          "false_negative_rate": 0.1874,
+          "roc_auc": 0.9811,
+          "pr_auc": 0.9817,
+          "confusion_matrix": {
+            "tp": 412,
+            "fp": 5,
+            "tn": 566,
+            "fn": 95
+          }
+        },
+        "validation_at_0_5": {
+          "samples": 1078,
+          "phishing": 507,
+          "legitimate": 571,
+          "threshold": 0.5,
+          "precision": 0.9555,
+          "recall": 0.8895,
+          "f1": 0.9213,
+          "accuracy": 0.9286,
+          "false_positive_rate": 0.0368,
+          "false_negative_rate": 0.1105,
+          "roc_auc": 0.9811,
+          "pr_auc": 0.9817,
+          "confusion_matrix": {
+            "tp": 451,
+            "fp": 21,
+            "tn": 550,
+            "fn": 56
+          }
+        },
+        "train_seconds": 1.41
+      }
+    ]
+  }
+}

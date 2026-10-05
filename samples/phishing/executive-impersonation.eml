@@ -1,0 +1,32 @@
+Return-Path: <ceo.office.mobile@outlook-mail-secure.com>
+Received: from mx-in.example.org (mx-in.example.org [192.0.2.25])
+	by inbox.example.org with LMTP; Fri, 02 Oct 2026 15:48:02 +0000
+Received: from mail-out.outlook-mail-secure.com ([203.0.113.58])
+	by mx-in.example.org with ESMTP; Fri, 02 Oct 2026 15:48:00 +0000
+Authentication-Results: mx-in.example.org;
+	spf=pass smtp.mailfrom=outlook-mail-secure.com;
+	dkim=pass header.d=outlook-mail-secure.com;
+	dmarc=pass header.from=outlook-mail-secure.com
+From: "Daniel Reyes (CEO)" <ceo.office.mobile@outlook-mail-secure.com>
+Reply-To: daniel.reyes.ceo@protonmail-inbox.net
+To: analyst@example.org
+Subject: Quick favor - confidential
+Date: Fri, 02 Oct 2026 15:47:51 +0000
+Message-ID: <exec-551@outlook-mail-secure.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Hi,
+
+Are you at your desk? I'm in a board meeting and can't talk on the phone.
+I need you to process an urgent wire transfer to a new vendor today before
+3pm. Please keep this confidential and don't discuss it with anyone else on
+the team until the deal is announced.
+
+Also pick up four $200 Apple gift cards for client gifts and send me the
+codes by reply. I will reimburse you.
+
+Reply as soon as you get this.
+
+Daniel
+Sent from my iPhone

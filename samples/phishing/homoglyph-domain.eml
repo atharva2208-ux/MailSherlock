@@ -1,0 +1,22 @@
+Return-Path: <security@xn--microsft-sbh.com>
+Received: from mx-in.example.org (mx-in.example.org [192.0.2.25])
+	by inbox.example.org with LMTP; Sat, 03 Oct 2026 10:00:09 +0000
+Received: from mail.xn--microsft-sbh.com ([198.51.100.71])
+	by mx-in.example.org with ESMTP; Sat, 03 Oct 2026 10:00:07 +0000
+Authentication-Results: mx-in.example.org;
+	spf=pass smtp.mailfrom=xn--microsft-sbh.com;
+	dkim=pass header.d=xn--microsft-sbh.com;
+	dmarc=pass header.from=xn--microsft-sbh.com
+From: "Microsoft Security" <security@xn--microsft-sbh.com>
+To: analyst@example.org
+Subject: Security code for your Microsoft account
+Date: Sat, 03 Oct 2026 10:00:01 +0000
+Message-ID: <sec-3011@xn--microsft-sbh.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Please review recent activity on your Microsoft account.
+
+Sign in to review: https://account.xn--microsft-sbh.com/signin
+
+If you did not request this, reset your password now to keep your account secure.

@@ -1,0 +1,19 @@
+From: broken@example.net
+To: analyst@example.org
+Subject: Broken multipart
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="outer"
+
+--outer
+Content-Type: multipart/alternative; boundary="inner"
+
+--inner
+Content-Type: text/plain; charset=unknown-8bit
+Content-Transfer-Encoding: quoted-printable
+
+Please verify your account at http://203.0.113.9/login =ZZ broken escape
+--inner
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+bm90IHZhbGlkIGJhc2U2NCEhIQ==@@@@

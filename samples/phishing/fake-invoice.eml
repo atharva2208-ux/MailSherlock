@@ -1,0 +1,42 @@
+Return-Path: <accounts@northwind-supplies-billing.icu>
+Received: from mx-in.example.org (mx-in.example.org [192.0.2.25])
+	by inbox.example.org with LMTP; Wed, 30 Sep 2026 06:02:44 +0000
+Received: from mail.northwind-supplies-billing.icu ([203.0.113.201])
+	by mx-in.example.org with ESMTPS; Wed, 30 Sep 2026 06:02:41 +0000
+Authentication-Results: mx-in.example.org;
+	spf=pass smtp.mailfrom=northwind-supplies-billing.icu;
+	dkim=none;
+	dmarc=none header.from=northwind-supplies-billing.icu
+From: "Accounts Receivable" <accounts@northwind-supplies-billing.icu>
+To: analyst@example.org
+Subject: Overdue invoice INV-20931 - final notice
+Date: Wed, 30 Sep 2026 06:02:30 +0000
+Message-ID: <inv20931.final@northwind-supplies-billing.icu>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mix_9921"
+
+--mix_9921
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+Our records show invoice INV-20931 for $14,860.00 is now 30 days overdue.
+Please review the attached invoice and arrange the wire transfer today to
+avoid late fees and suspension of your service. Our banking details have
+changed, so please use the new account details in the attached document.
+
+Open the invoice here if the attachment does not display:
+http://203.0.113.201/invoices/INV-20931/view.php
+
+Regards,
+Accounts Receivable
+
+--mix_9921
+Content-Type: application/octet-stream; name="INV-20931.pdf.exe"
+Content-Disposition: attachment; filename="INV-20931.pdf.exe"
+Content-Transfer-Encoding: base64
+
+TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAABNYWlsU2hlcmxvY2sgc2FtcGxlIC0gbm90
+IGEgcmVhbCBleGVjdXRhYmxlLiBIYXJtbGVzcyB0ZXN0IGZpeHR1cmUu
+
+--mix_9921--

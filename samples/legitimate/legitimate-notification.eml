@@ -1,0 +1,24 @@
+Return-Path: <no-reply@accounts.google.com>
+Received: from mx-in.example.org (mx-in.example.org [192.0.2.25])
+	by inbox.example.org with LMTP; Sat, 03 Oct 2026 19:31:08 +0000
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com [192.0.2.69])
+	by mx-in.example.org with ESMTPS; Sat, 03 Oct 2026 19:31:07 +0000
+Authentication-Results: mx-in.example.org;
+	spf=pass smtp.mailfrom=accounts.google.com;
+	dkim=pass header.d=accounts.google.com;
+	dmarc=pass (p=reject) header.from=accounts.google.com
+From: Google <no-reply@accounts.google.com>
+To: analyst@example.org
+Subject: Security alert: new sign-in on Linux
+Date: Sat, 03 Oct 2026 19:31:05 +0000
+Message-ID: <sec-alert-4f1d@accounts.google.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+<h3>A new sign-in on Linux</h3>
+<p>analyst@example.org</p>
+<p>We noticed a new sign-in to your Google Account on a Linux device. If this was you, you don't need to do anything. If not, we'll help you secure your account.</p>
+<p><a href="https://accounts.google.com/AccountChooser?Email=analyst@example.org&amp;continue=https://myaccount.google.com/alert/nt/1696">Check activity</a></p>
+<p>You can also see security activity at <a href="https://myaccount.google.com/notifications">https://myaccount.google.com/notifications</a></p>
+</body></html>

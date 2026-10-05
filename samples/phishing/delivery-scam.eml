@@ -1,0 +1,27 @@
+Return-Path: <notify@dhl-parcel-redelivery.top>
+Received: from mx-in.example.org (mx-in.example.org [192.0.2.25])
+	by inbox.example.org with LMTP; Fri, 02 Oct 2026 08:05:31 +0000
+Received: from host-198-51-100-9.example.net ([198.51.100.9])
+	by mx-in.example.org with SMTP; Fri, 02 Oct 2026 08:05:29 +0000
+Authentication-Results: mx-in.example.org;
+	spf=none smtp.mailfrom=dhl-parcel-redelivery.top;
+	dkim=none;
+	dmarc=none header.from=dhl-parcel-redelivery.top
+From: "DHL Express" <notify@dhl-parcel-redelivery.top>
+To: analyst@example.org
+Subject: Your parcel could not be delivered
+Date: Fri, 02 Oct 2026 08:05:20 +0000
+Message-ID: <p-88120@dhl-parcel-redelivery.top>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+DHL Express
+
+We attempted to deliver your package today but no one was available to sign.
+A customs fee of 2.99 USD is outstanding. Your parcel will be returned to the
+sender if the fee is not paid within 12 hours.
+
+Pay the redelivery fee and schedule a new delivery:
+https://dhl-parcel-redelivery.top/track/pay?id=DE7730912&amount=2.99
+
+Tracking number: DE7730912
